@@ -1,6 +1,10 @@
 window.onload = function() {
+  setText('about.html'); // initial page
+}
+
+function setText(navItem) {
   var elmnt = document.getElementById("contents-box");
-  file = 'about.html';
+  file = navItem;
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     console.log(this.readyState)
